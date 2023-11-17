@@ -1,0 +1,57 @@
+{% extends 'partials/base.html' %}
+
+{% block content %}
+
+<div class="container-fluid pt-3">
+	<div class="row">
+		<div class="col-md-3" id="chart-container">
+			<div id="container"></div>
+
+		</div>
+		<div class="col-md-6" id="map-container">
+			<!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content" style=" margin-left: -1086px;margin-top: 275px;width:1185px">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ABOUT</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="buta">
+                      <div class="modal-body">
+                        <div class="fontain">
+                            <div class="box">
+                                <h2>SERVICE</h2>
+                                <h3>Covid-19 Dashboard</h3>
+                                <p> The COVID-19 dashboard, a powerful tool designed to keep you informed and empowered during these challenging times. This commitment to providing valuable insights stems from a deep understanding of the importance of real-time, accurate information in navigating the complexities of the ongoing pandemic. Knowledge is power, especially in times of uncertainty. This COVID-19 dashboard is not just a tool; it's a commitment to keeping you, our community, and the world informed and resilient.</p>    
+                            </div>
+                            <div class="box">
+                                <h2>DEVELOPER</h2>
+                                <h3>Ahado Kwame Jesse</h3>
+                                <p><span style="font-weight: bold;">INSTITUTION : </span>Kwame Nkrumah University of Science and Technology</p>
+                                <p><span style="font-weight: bold;">POSITION : </span>Teaching and Research Assistant</p>
+                                <p><span style="font-weight: bold;">DEPARTMENT : </span>Geomatic engineering</p>
+                                <p><span style="font-weight: bold;">EMAIL : </span>jessedabankah@gmail.com</p>
+                                <p><span style="font-weight: bold;">PHONE : </span>+233504116594</p>    
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer" style="background-color: #c98d51;">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+			<div>{{world_map | safe}}</div>
+			
+		</div>
+		<div class="col-md-3" id="chart-container">
+			<div class="btn-dark" style="margin-top: 70px; border-radius: 4px; margin-right: 20px; text-align: center;"><span id="casesTotal" style="font-size: 40PX; font-weight: bold; font-style: italic;">{{tSum | safe}}   TOTAL CASES</span></div>
+		</div>
+	</div>
+</div>
+{% endblock %}
