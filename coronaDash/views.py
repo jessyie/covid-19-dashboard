@@ -91,7 +91,7 @@ def initialise_chart(case = 'Total_Confirmed', continent = 'Africa'):
     #________________
     world_geo = os.path.join(data_loc_str, 'CDATA', 'world_countries.json')
 
-    world_map = folium.Map(location=[0, 0], zoom_start=2)
+    world_map = folium.Map(location=[0, 0], zoom_start=2,)
 
     #// The following is done to let Folium determine the scale.
    # threshold_scale = np.linspace(dfContinentSumBA["Total"].min(),
@@ -110,7 +110,7 @@ def initialise_chart(case = 'Total_Confirmed', continent = 'Africa'):
         name='Totals',
         fill_opacity=0.7,
         line_opacity=0.2,
-        legend_name='Total cases based on each country',
+        legend_name='Total cases based on each country(Cases Range)',
         tooltip=folium.GeoJsonTooltip(fields=["Country", "Total"]),
         reset=True).add_to(world_map)
 
@@ -157,7 +157,7 @@ def initialise_chart(case = 'Total_Confirmed', continent = 'Africa'):
         name='Totals',
         fill_opacity=0.7,
         line_opacity=0.2,
-        legend_name='Total cases based on each country',
+        legend_name='Total cases based on each country(Cases Range)',
         tooltip=folium.GeoJsonTooltip(fields=["Country", "Total"]),
         reset=True).add_to(world_map2)
 

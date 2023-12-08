@@ -28,7 +28,7 @@
    position: relative;
    width: 320px;
    background: #fff;
-   padding: 100px 40px 60px;
+   padding: 41px 40px 60px;
    box-shadow: 0 15px 45px rgba(0, 0, 0, .1); 
 }
 .fontain .box:before
@@ -87,4 +87,248 @@
 .fontain .box:hover p
 {
     color: #fff;
+}
+#navi {
+    padding-left: 10px;
+    padding-right: 10px; 
+    margin-left: 7px;
+}
+.title1 {
+    font-size: 45px;
+}
+.title2 {
+    font-size: 25px; 
+    font-style: italic;
+}
+#continentSelection {
+    border-style: solid;
+    border-radius: 3px; 
+    padding: 4px; 
+    font-size: 17px;
+}
+#caseSelection {
+    border-style: solid; 
+    border-radius: 3px; 
+    padding: 6px; 
+    font-size: 16px; 
+    margin-right: 150px
+}
+#btn1 {
+    font-size: 10px; 
+    margin-right: 180px; 
+    border-style: solid; 
+    border-radius: 20px; 
+    background-color: #445063; 
+    border-width: 1px; 
+    padding: 8px
+}
+#md1 {
+    margin-left: -1086px;
+    margin-top: 275px;
+    width:1185px
+}
+.pp1 {
+    font-size: x-small;
+}
+
+@media screen and (max-width: 600px)
+{
+    #bar1 {
+        min-height: 2vh;
+    }
+    #bar2 {
+        height: 3vh;
+    }
+    #navi {
+        margin-left: 27vw;
+        margin-top: -6.5vh;
+    }
+    .navi2 {
+        margin-top: 3vh;
+    }
+    .title1 {
+        font-size: 3.7vw;
+    }
+    .title2 {
+        display: none;
+    }
+    #continentSelection {
+        font-size: 1vw;
+        margin-left: 44vw;
+        margin-top: -4vh;
+        
+    }
+    #caseSelection {
+        font-size: 1vw;
+        margin-left: 4vw;
+        margin-top: -4vh;
+        
+    }
+    #btn1 {
+        font-size: 1vw;
+        margin-right: 4vw;
+        margin-top: -3vh;
+        
+    }
+    .dive {
+        display: none;
+    }
+    #map-container {
+        margin-left: 0vw;
+    }
+    #chart-container2 {
+        margin-left: 0vw;
+    }
+    #md1 {
+    margin-left: -1vw;
+    margin-top: 66vh;
+    width:96vw;
+    }
+    .pp1 {
+        font-size: xx-small;
+    }
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    #bar1 {
+        min-height: 2vh;
+    }
+    #bar2 {
+        height: 3vh;
+    }
+    #navi {
+        margin-left: 27vw;
+        margin-top: -1.5vh;
+    }
+    .navi2 {
+        margin-top: 3vh;
+    }
+    .title1 {
+        font-size: 3.7vw;
+    }
+    .title2 {
+        display: none;
+    }
+    #continentSelection {
+        font-size: 1vw;
+        margin-left: -110vw;
+        margin-top: 0.8vh;
+        margin-right: -5vw;
+        
+    }
+    #caseSelection {
+        font-size: 1vw;
+        margin-left: 16vw;
+        margin-right: -31vw;
+        margin-top: 0.4vh;
+        
+    }
+    #btn1 {
+        font-size: 1vw;
+        margin-left: -8vw;
+        margin-top: 0vh;
+        margin-right: -1vw;
+        
+    }
+    .dive {
+        display: none;
+    }
+    #chart-container {
+        width: 100vw;
+    }
+    #map-container {
+        margin-left: 0vw;
+        width: 100vw;
+    }
+    #chart-container2 {
+        margin-left: 0vw;
+        width: 100vw;
+        margin-top: -1vh;
+    }
+    #md1 {
+    margin-left: -43vw;
+    margin-top: 37vh;
+    width: 44vw;
+    }
+    .pp1 {
+        font-size: xx-small;
+    }
+}
+@media screen and (min-width: 900px) {
+    #bar1 {
+       width: 100vw;
+       min-height: 2vh; 
+    }
+    #bar2 {
+        height: 4vh;
+    }
+    #navi {
+        margin-left: -1vw;
+        
+    }
+    .navi2 {
+        font-size: 1vw;
+    }
+    .title1 {
+        font-size: 1.8vw;
+    }
+    .title2 {
+        font-size: 0.8vw;
+
+    }
+    #continentSelection {
+        font-size: 1vw;
+        margin-left: 16vw;   
+        
+    }
+    #caseSelection {
+        font-size: 1vw;
+        margin-right: 27vw;
+        margin-left: -58vw;
+    }
+    #btn1 {
+        font-size: 0.4vw;
+        margin-left: -9vw;
+        margin-right: 0vw;
+        
+        
+    }
+    .dive {
+        font-size: 1.4vw;
+        margin: 1vw;
+    }
+    #md1 {
+    margin-left: -51vw;
+    margin-top: 37vh;
+    width: 44vw;
+    }
+    .pp1 {
+        font-size: xx-small;
+    }
+    #map-container {
+        width: 45vw;
+        margin-left: 3vw;
+        
+    }
+    #chart-container {
+        width: 25vw;
+             
+    }
+    #chart-container2 {
+        width: 25vw;
+        
+    }
+    #md1 {
+    margin-left: -41vw;
+    margin-top: 55vh;
+    width: 28vw;
+    }
+    .pp1 {
+        font-size: xx-small;
+    }
+    #lat1 {
+        width: 25vw;
+
+    }
+   
+    
 }

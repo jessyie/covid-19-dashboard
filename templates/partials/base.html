@@ -29,16 +29,14 @@
 	
 </head>
 <body>
-	<nav class="navbar navbar-expand-md navbar-dark bg-secondary fixed-top">
-		<div class="container-fluid">
+	<nav class="navbar navbar-expand-md navbar-dark bg-secondary fixed-top" id="bar1">
+		<div class="container-fluid" id="bar2">
 
-			<a class="navbar-brand item2" href="#"
-			style="padding-left: 10px; padding-right: 10px; margin-left: 7px;">
-			<h1><span style="font-size: 45px;">CORONA DASHBOARD</span> | <span style="font-size: 25px; font-style: italic;">Global Data</span></h1>
+			<a class="navbar-brand item2" href="#" id="navi">
+			<h1 class="navi2"><span class="title1">CORONA DASHBOARD</span><span class="dive">|</span><span class="title2">Global Data</span></h1>
 			</a>
 
-			<select id='continentSelection' onchange='changeChartContinent()' method="post" type="submit" class=btn-dark name='regionNames'
-			style="border-style: solid; border-radius: 3px; padding: 4px; font-size: 17px;">
+			<select id='continentSelection' onchange='changeChartContinent()' method="post" type="submit" class=btn-dark name='regionNames'>
 
 				<option id='continentOption' selected>CONTINENT</option>
 				{% for ga in graph1AX %}
@@ -48,7 +46,7 @@
 			</select>
 
 			<select id='caseSelection' onchange="changeChartCase()" class=btn-dark
-			style="border-style: solid; border-radius: 3px; padding: 6px; font-size: 16px; margin-right: 150px">
+			style="">
 				<option selected value="">CASES</option>
 				<option value='Total_Confirmed'>Total_Confirmed</option>
 				<option value="Total_Deaths">Total_Deaths</option>
@@ -56,7 +54,7 @@
 	
 			</select>
 			<div>
-				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="font-size: 10px; margin-right: 180px; border-style: solid; border-radius: 20px; background-color: #445063; border-width: 1px; padding: 8px">
+				<button id="btn1" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="">
 					ABOUT
 				</button>
 			</div>

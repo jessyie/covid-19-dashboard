@@ -12,7 +12,7 @@
 			<!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog" role="document">
-                <div class="modal-content" style=" margin-left: -1086px;margin-top: 275px;width:1185px">
+                <div class="modal-content" id="md1">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">ABOUT</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -22,20 +22,15 @@
                   <div class="buta">
                       <div class="modal-body">
                         <div class="fontain">
-                            <div class="box">
-                                <h2>SERVICE</h2>
-                                <h3>Covid-19 Dashboard</h3>
-                                <p> The COVID-19 dashboard, a powerful tool designed to keep you informed and empowered during these challenging times. This commitment to providing valuable insights stems from a deep understanding of the importance of real-time, accurate information in navigating the complexities of the ongoing pandemic. Knowledge is power, especially in times of uncertainty. This COVID-19 dashboard is not just a tool; it's a commitment to keeping you, our community, and the world informed and resilient.</p>    
+                            <div class="box" id="lat1">
+                                
+                              <p class="pp1"><span style="font-weight: bold;">Covid-19 Dashboard</span><br>The COVID-19 dashboard, a powerful tool designed to keep you informed and empowered during these challenging times. This commitment to providing valuable insights stems from a deep understanding of the importance of real-time, accurate information in navigating the complexities of the ongoing pandemic. Knowledge is power, especially in times of uncertainty. This COVID-19 dashboard is not just a tool; it's a commitment to keeping you, our community, and the world informed and resilient.</p>
+                              <p class="pp1"><span style="font-weight: bold;">DEVELOPER</span><br>
+                                <ul class="pp1" style="color: black;">* Ahado Kwame Jesse [jessedabankah@gmail.com]</ul>
+                              </p>
+                              <p class="pp1"><span style="font-weight: bold;">DISCLAIMER</span><br>The information provided by us on this Website is for general information purposes only. All information on this website is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, validity, reliability, availability or completeness of any information on this website. This Website is solely for informational purposes and does not represent a contract. Any liabilities or warranties are thus excluded on the part of any contractual party named on this Website and/or any employees or bodies thereof. No liability or warranty will be assumed related to the future fulfillment or non-fulfillment of specific occurrences, expectations, assumptions, etc. The entire risk as to the quality and performance of this Website is with You. Should any service or content prove defective in any respect, You (not any Contributor) assume the cost of any necessary servicing, repair, or correction. Your access to and use of the Services or any Content is at your own risk. You understand and agree that the Services and Content are provided to you on an ‘as is’ and ‘as available’ basis. Without limiting the foregoing, to the full extent permitted by law, this Website disclaims all warranties, express or implied, of merchantability, fitness for a particular purpose, or non-infringement.<br>© Covid-19 Dashboard</p>   
                             </div>
-                            <div class="box">
-                                <h2>DEVELOPER</h2>
-                                <h3>Ahado Kwame Jesse</h3>
-                                <p><span style="font-weight: bold;">INSTITUTION : </span>Kwame Nkrumah University of Science and Technology</p>
-                                <p><span style="font-weight: bold;">POSITION : </span>Teaching and Research Assistant</p>
-                                <p><span style="font-weight: bold;">DEPARTMENT : </span>Geomatic engineering</p>
-                                <p><span style="font-weight: bold;">EMAIL : </span>jessedabankah@gmail.com</p>
-                                <p><span style="font-weight: bold;">PHONE : </span>+233504116594</p>    
-                            </div>
+                            
                         </div>
                     </div>
                   </div>
@@ -46,10 +41,10 @@
                 </div>
               </div>
             </div>
-			<div>{{world_map | safe}}</div>
+			<div class="myMap">{{world_map | safe}}</div>
 			
 		</div>
-		<div class="col-md-3" id="chart-container">
+		<div class="col-md-3" id="chart-container2">
 			<div class="btn-dark" style="margin-top: 70px; border-radius: 4px; margin-right: 20px; text-align: center;"><span id="casesTotal" style="font-size: 40PX; font-weight: bold; font-style: italic;">{{tSum | safe}}   TOTAL CASES</span></div>
 		</div>
 	</div>
